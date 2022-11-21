@@ -1,0 +1,352 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.name1{ grid-area: name1; }
+.name2{ grid-area: name2; }
+.name3{ grid-area: name3; }
+.name4{ grid-area: name4; }
+.date1{ grid-area: date1; }
+
+.address1{ grid-area: address1; }
+.address2{ grid-area: address2; }
+.address3{ grid-area: address3; }
+.address4{ grid-area: address4; }
+.address5{ grid-area: address5; }
+.address6{ grid-area: address6; }
+.address7{ grid-area: address7; }
+
+.contact1{ grid-area: contact1; }
+.contact2{ grid-area: contact2; }
+.contact3{ grid-area: contact3; }
+.contact4{ grid-area: contact4; }
+
+.s1{ grid-area: s1; }
+.s2{ grid-area: s2; }
+.s3{ grid-area: s3; }
+.s4{ grid-area: s4; }
+.s5{ grid-area: s5; }
+.s6{ grid-area: s6; }
+
+.pol1{ grid-area: pol1; }
+.pol2{ grid-area: pol2; }
+
+.citizen1{ grid-area: citizen1; }
+.citizen2{ grid-area: citizen2; }
+.citizen3{ grid-area: citizen3; }
+.citizen4{ grid-area: citizen4; }
+
+
+.worked1{ grid-area: worked1; }
+.worked2{ grid-area: worked2; }
+.worked3{ grid-area: worked3; }
+.worked4{ grid-area: worked4; }
+
+.convicted1{ grid-area: convicted1; }
+.convicted2{ grid-area: convicted2; }
+
+.why1{ grid-area: why1; }
+.why2{ grid-area: why2; }
+
+
+
+
+
+
+
+main {
+
+    // width: 100%;
+
+    position: relative;
+    width: 1200px;
+
+    // height: 1000px;
+
+    overflow: hidden;
+
+    // background-color: red;
+
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    padding: 10px;
+
+
+    & .head {
+
+        width: 100%;
+        // background-color: white;
+        border-bottom: 1px solid gray;
+
+        height: 150px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+
+        & h4 {
+            width: 100%;
+            text-align: right;
+        }
+
+        & h6 {
+            width: 100%;
+            text-align: right;
+        }
+
+        & h5 {
+            width: 100%;
+            text-align: center;
+        }
+
+
+    }
+
+    & .title_con{
+
+        width: 100%;
+        height: 120px;
+        // background-color: yellow;
+        display: flex;
+        align-items: center;
+
+        & div{
+            width: 100%;
+            max-width: 800px;
+            height: 60px;
+            // background-color: blue;
+            border-left: 5px solid blue;
+            border-top: 5px solid blue;
+
+            // margin-left: 100px;
+
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+
+
+            & h2 {
+                font-size: 20px;
+                font-style: italic;
+
+                font-weight: 900;
+            }
+
+        }
+        
+    }
+
+
+    & .description{
+
+        width: 100%;
+        padding: 10px;
+
+        & .name_input{
+            width: 270px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        & .date_input{
+            width: 200px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        & .address_input{
+            width: 800px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+        & .address_input_2{
+            width: 370px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        & form {
+
+            & p{
+
+                line-height: 50px;
+
+                & .w_f_83{
+                    width: 83px;
+                }
+
+            }
+
+            
+
+            
+
+        }
+
+
+    }
+
+    label{
+        white-space: nowrap;
+        width: 120px;
+        font-weight: 700;
+    }
+
+
+    & input[type=text]{
+
+        width: 422px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+
+    }
+    & input[type=date]{
+
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+
+    }
+    & input[type=radio]{
+
+    //    margin-left: 10px ;
+
+    }
+
+
+    & .form_grid{
+        width: 100%;
+        // background-color: gray;
+        padding: 10px 0px;
+
+        display: grid;
+        gap: 5px;
+        grid-template-areas: 
+        
+        'name1 name2 name2  name3 name3 name4 name4  date1  date1'
+        'address1 address2 address2 address2 address2 address2 address2 address3 address3'
+        'address4 address5 address5 address6 address6 address6 address7 address7 address7'
+        'contact1 contact2 contact2 contact2 contact3 contact4 contact4 contact4 contact4'
+        's1 s2 s2 s3 s4 s4 s5 s6 s6'
+        'pol1 pol1 pol2 pol2 pol2 pol2 pol2 pol2 pol2'
+        'citizen1 citizen1 citizen1 citizen2 citizen3 citizen3 citizen3 citizen3 citizen4'
+        'worked1 worked1 worked1 worked2 worked3 worked4 worked4 worked4 worked4'
+        'convicted1 convicted1 convicted1 convicted2 convicted2 convicted2 convicted2 convicted2 convicted2'
+        'why1 why2 why2 why2 why2 why2 why2 why2 why2'
+        
+        ;
+
+
+        & div{
+            height: 25px;
+            // background-color: yellowgreen;
+
+            display: flex;
+            
+
+            margin-bottom: 20px;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+}
+
+
+
+.main_form{
+    display: flex;
+    width: 100%;
+    height: 22px;
+    // background-color: yellow;
+    margin-bottom: 20px;
+
+    gap: 20px;
+
+}
+
+h6{
+    // margin: 0px 10px;
+}
+
+.auto{
+    width: auto !important;
+}
+.w_250{
+    width: 306px !important;
+}
+.w_135{
+    width: 135px !important;
+}
+.w_30{
+    width: 120px !important;
+}
+.w_900{
+    width: 900px !important;
+}
+
+.i_100{
+    width: 100% !important;
+}
+
+
+h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: justify ;
+    font-weight: 500;
+    line-height: 30px !important;
+    // text-indent: 100px;
+    margin-bottom: 30px;
+
+}
+
+.center{
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 900;
+}
+
+li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.logo{
+    height: 100px;
+    width: 120px;
+
+    position: absolute;
+}
+
+
+
+
+
+
+
