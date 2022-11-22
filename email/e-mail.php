@@ -14,7 +14,7 @@
 
 
 
-    if (isset($_POST['submit'])){
+    if (isset($_POST['submit_1'])){
 
         $l_name = $_POST['l_name'];
         $f_name = $_POST['f_name'];
@@ -183,10 +183,6 @@
 
 
 
-
-
-
-
         try {
 
             $mail->isSMTP();                                            
@@ -242,6 +238,85 @@
 
 
         
+    }
+
+
+
+
+
+
+
+
+    if (isset($_POST['submit_2'])){
+
+
+        $Comments_1 = $_POST['Comments_1'];
+        $Comments_2 = $_POST['Comments_2'];
+
+
+        $t_1 = $_POST['t_1'];
+        $t_2 = $_POST['t_2'];
+        $t_3 = $_POST['t_3'];
+
+
+        $SIGNED_this_1 = $_POST['SIGNED_this_1'];
+        $day_of_1 = $_POST['day_of_1'];
+
+        $By_1 = $_POST['By_1'];
+        $Employee_1 = $_POST['Employee_1'];
+
+        $Employee_2 = $_POST['Employee_2'];
+        $Printed_Name = $_POST['Printed_Name'];
+
+        $Employee_Signature = $_POST['Employee_Signature'];
+
+        $Date_2 = $_POST['Date_2'];
+
+        $Employee_Signature_D_1 = $_POST['Employee_Signature_D_1'];
+        $Employee_Signature_D_2 = $_POST['Employee_Signature_D_2'];
+
+        $Employee_Signature_D_2 = $_POST['Employee_Signature_D_2'];
+
+
+        $t_4 = $_POST['t_4'];
+        $t_5 = $_POST['t_5'];
+        $t_6 = $_POST['t_6'];
+        $t_7 = $_POST['t_7'];
+        $t_8 = $_POST['t_8'];
+        $t_9 = $_POST['t_9'];
+        $t_10 = $_POST['t_10'];
+        $t_11 = $_POST['t_11'];
+        $t_12 = $_POST['t_12'];
+        $t_13 = $_POST['t_13'];
+        $t_14 = $_POST['t_14'];
+        $t_15 = $_POST['t_15'];
+        $t_16 = $_POST['t_16'];
+        $t_17 = $_POST['t_17'];
+        $t_18 = $_POST['t_18'];
+
+        $Employee_Signature_3 = $_POST['Employee_Signature_3'];
+        $Date_3 = $_POST['Date_3'];
+
+        $Date_3 = $_POST['Date_3'];
+        $Agency_Witness_1 = $_POST['Agency_Witness_1'];
+        $Date_4 = $_POST['Date_4'];
+
+        $Approved_By_1 = $_POST['Approved_By_1'];
+        $Effective_By_1 = $_POST['Effective_By_1'];
+
+        $Effective_By_1 = $_POST['Effective_By_1'];
+
+        $t_19 = $_POST['t_19'];
+
+        $Employee_Signature_4 = $_POST['Employee_Signature_4'];
+        $Date_5 = $_POST['Date_5'];
+
+        $Supervisor_Signature = $_POST['Supervisor_Signature'];
+        $Date_6 = $_POST['Date_6'];
+
+
+
+
     }
     
     
