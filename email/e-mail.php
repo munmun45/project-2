@@ -314,18 +314,91 @@
         $Supervisor_Signature = $_POST['Supervisor_Signature'];
         $Date_6 = $_POST['Date_6'];
 
+        $t_20 = $_POST['t_20'];
+        $Staff_Signature_1 = $_POST['Staff_Signature_1'];
+        $Staff_Title_1 = $_POST['Staff_Title_1'];
+
+        $Date_7 = $_POST['Date_7'];
+
+        $Employee_Signature_5 = $_POST['Employee_Signature_5'];
+        $Date_8 = $_POST['Date_8'];
+
+        $Agency_Representative_Signature = $_POST['Agency_Representative_Signature'];
+        $Date_9 = $_POST['Date_9'];
+
+        $t_21 = $_POST['t_21'];
+        $Printed_Name_of_Applicant_1 = $_POST['Printed_Name_of_Applicant_1'];
+        $Application_Signature_1 = $_POST['Application_Signature_1'];
+
+        $Date_10 = $_POST['Date_10'];
+
+        $Witness_Signature_1 = $_POST['Witness_Signature_1'];
+        $Printed_Name_of_Witness_1 = $_POST['Printed_Name_of_Witness_1'];
+
+
+
+
+        
+
+
+        $message = " " ;
+
+
+
+
+        try {
+
+            $mail->isSMTP();                                            
+            $mail->Host       = 'mail.demo.com';        
+            $mail->SMTPAuth   = true;                                  
+            $mail->Username   = 'demo@demo.com';                 
+            $mail->Password   = 'pass';                         
+            $mail->SMTPSecure = 'tls';                                  
+            $mail->Port       = 587;                                    
+            
+            $mail->setFrom( "Noreplay@demo.com", $name); 
+            $mail->addAddress("demo@gmail.com", "demo name");     
+           
+            $mail->isHTML(true);
+            $mail->Subject = "title demo";
+            $mail->Body    = $message;
+    
+            $mail->send();
+            
+            
+            
+            
+            echo "
+                <script>
+
+                    localStorage.setItem('alert_Email', '1');
+                    window.location.href='../index.php';
+                
+                </script>
+            ";
+            exit;
+
+        } catch (Exception $e) {
+
+            echo "
+                <script>
+
+                    localStorage.setItem('alert_Email', '2');
+                    window.location.href='../index.php';
+                
+                </script>
+            ";
+            exit;
+
+        }
+
+
+
+        
+
+
+
 
 
 
     }
-    
-    
-    
-    
-   
-    
-
-    
-
-
-?>
