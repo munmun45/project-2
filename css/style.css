@@ -308,8 +308,8 @@ p {
 
 .center {
   text-align: center;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 li {
@@ -322,4 +322,9 @@ li {
   height: 100px;
   width: 120px;
   position: absolute;
+}
+
+.logo_2 {
+  height: 100px;
+  width: 120px;
 }/*# sourceMappingURL=style.css.map */
